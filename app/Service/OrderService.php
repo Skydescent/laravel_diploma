@@ -16,6 +16,7 @@ class OrderService implements OrderServiceContract
         private CartDiscountServiceContract $discountService,
         private OrderItemRepositoryContract $orderItemRepository,
         private GetCartServiceContract      $cart,
+        private DeliveryCostService $deliveryCostService,
         private Order $order
     )
     {
@@ -77,7 +78,7 @@ class OrderService implements OrderServiceContract
 
     public function getTotalCost(): float
     {
-        return $this->cart->getTotalCost($this->getOrderItemsDTOs());
+        return $this->deliveryCostService->getCost($this->order->delivery_type) + $this->cart->getTotalCost($this->getOrderItemsDTOs());
     }
 
 }
