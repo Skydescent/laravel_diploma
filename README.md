@@ -10,8 +10,8 @@
 Team-lead: <a href="https://github.com/mvsvolkov">mvsvolkov</a>
 
 Team:
-- <a href="https://github.com/Tmoiseenko">Tmoiseenko</a>
 - <a href="https://github.com/Skydescent">Skydescent</a>
+- <a href="https://github.com/Tmoiseenko">Tmoiseenko</a>
 - <a href="https://github.com/cool-dice">cool-dice</a>
 - <a href="https://github.com/tftp">tftp</a>
 
