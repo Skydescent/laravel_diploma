@@ -30,9 +30,9 @@ class ReviewRepository implements ReviewRepositoryContract
     }
 
     public function getPaginatedReviews(
-        string  $productId,
-        int     $perPage,
-        int     $currentPage
+        string $productId,
+        int $perPage,
+        int $currentPage
     ): LengthAwarePaginator
     {
         $ttl = $this->adminsSettings->get('reviewTimeCache', 60 * 60 * 24);
