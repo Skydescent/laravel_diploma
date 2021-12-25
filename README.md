@@ -58,14 +58,7 @@ sail artisan migrate
 sail artisan db:seed \\Database\\Seeders\\DemoDataSeeders\\DemoDataSeeder
 ```
 
-
-### _3. Видео-запись с защиты моей части диплома_
-
-<hr style="border:1px solid gray"> </hr>
-
-[![Дипломная работа](https://img.youtube.com/vi/iZCqdbRobrg/maxresdefault.jpg)](https://youtu.be/iZCqdbRobrg)
-
-### _4.1 Модель хранения данных_
+### _3.1 Модель хранения данных_
 
 <hr style="border:1px solid gray"> </hr>
 
@@ -91,7 +84,7 @@ sail artisan db:seed \\Database\\Seeders\\DemoDataSeeders\\DemoDataSeeder
 - ViewedProduct
 - Manufacturer
 
-### _4.2 Cтруктура URL_
+### _3.2 Cтруктура URL_
 
 <hr style="border:1px solid gray"> </hr>
 
@@ -134,7 +127,7 @@ sail artisan db:seed \\Database\\Seeders\\DemoDataSeeders\\DemoDataSeeder
 | Административный раздел | Форма проведения импорта | Выбор параметорв импорта | GET | /admin/import | admin.import |- |
 | Административный раздел | Форма проведения импорта | Нажатие на кнопку "Запустить импорт" | GET | /admin/start-import | admin/start-import |- |
 
-### 4.3 Разработка модели сервисов
+### 3.3 Разработка модели сервисов
 
 <hr style="border:1px solid gray"> </hr>
 
@@ -159,7 +152,8 @@ sail artisan db:seed \\Database\\Seeders\\DemoDataSeeders\\DemoDataSeeder
 |ViewedProduct|viewed_products|ViewedProductsService|ViewedProductsRepository|
 |Manufacturer|manufacturers|-|ManufacturerRepository|
 
-### 4.4 Разработка модели категорий товаров и интеграция шаблонов меню категорий
+### 3.4 Видео-запись защиты моей части диплома
 
 <hr style="border:1px solid gray"> </hr>
 
+[![Дипломная работа](https://img.youtube.com/vi/iZCqdbRobrg/maxresdefault.jpg)](https://youtu.be/iZCqdbRobrg)
