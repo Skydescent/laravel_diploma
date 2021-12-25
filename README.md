@@ -7,13 +7,13 @@
 Проект разрабатывался с 15 августа 2021 года по 7 декабря 2021 года. 
 Все участники выполняли задачи дипломного проекта в условиях полной занятости на основной работе.
 
-Team-lead: @mvsvolkov
+Team-lead: @github/mvsvolkov
 
 Team:
-    @Tmoiseenko
-    @Skydescent
-    @cool-dice
-    @tftp
+- @github/Tmoiseenko
+- @github/Skydescent
+- @github/cool-dice
+- @github/tftp
 
 ### _2. Установка приложения_
 <hr style="border:2px solid gray"> </hr>
