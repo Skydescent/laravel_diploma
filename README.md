@@ -9,7 +9,7 @@
 
 Team-lead: <a href="https://github.com/mvsvolkov">mvsvolkov</a>
 
-Team:
+Команда:
 - <a href="https://github.com/Skydescent">Skydescent</a>
 - <a href="https://github.com/Tmoiseenko">Tmoiseenko</a>
 - <a href="https://github.com/cool-dice">cool-dice</a>
@@ -60,9 +60,14 @@ sail artisan db:seed \\Database\\Seeders\\DemoDataSeeders\\DemoDataSeeder
 
 
 ### _3. Видео-запись с защиты моей части диплома_
+
+<hr style="border:1px solid gray"> </hr>
+
 [![Дипломная работа](https://img.youtube.com/vi/iZCqdbRobrg/maxresdefault.jpg)](https://youtu.be/iZCqdbRobrg)
 
 ### _4.1 Модель хранения данных_
+
+<hr style="border:1px solid gray"> </hr>
 
 Первая моя задача  - сделать схему хранения данных, по ходу проекта данная схема изменилась.
 
@@ -87,6 +92,8 @@ sail artisan db:seed \\Database\\Seeders\\DemoDataSeeders\\DemoDataSeeder
 - Manufacturer
 
 ### _4.2 Cтруктура URL_
+
+<hr style="border:1px solid gray"> </hr>
 
 Вторая задача - создание структуры URL, впоследствии она также была изменена
 
@@ -127,7 +134,11 @@ sail artisan db:seed \\Database\\Seeders\\DemoDataSeeders\\DemoDataSeeder
 | Административный раздел | Форма проведения импорта | Выбор параметорв импорта | GET | /admin/import | admin.import |- |
 | Административный раздел | Форма проведения импорта | Нажатие на кнопку "Запустить импорт" | GET | /admin/start-import | admin/start-import |- |
 
-### 1.3 Разработка модели сервисов
+### 4.3 Разработка модели сервисов
+
+<hr style="border:1px solid gray"> </hr>
+
+Третья моя задача - разработка перечня предполагаемых сервисов и репозиториев, впоследствии также была изменена.
 
 |Model|DB table|Services|Repository|
 |------|------|------|------|
@@ -147,3 +158,8 @@ sail artisan db:seed \\Database\\Seeders\\DemoDataSeeders\\DemoDataSeeder
 |User|users|-|UserRepository|
 |ViewedProduct|viewed_products|ViewedProductsService|ViewedProductsRepository|
 |Manufacturer|manufacturers|-|ManufacturerRepository|
+
+### 4.4 Разработка модели категорий товаров и интеграция шаблонов меню категорий
+
+<hr style="border:1px solid gray"> </hr>
+
