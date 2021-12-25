@@ -83,7 +83,7 @@ class ProductsController extends Controller
         $product = $this->productRepository->find($slug);
         $viewedService->add($product);
         $qty = request('amount');
-        if (is_null($qty) || is_string($qty) || $qty < 0) $qty = 1;
+        if (!is_numeric($qty) || $qty < 0) $qty = 1;
 
         if ($addToCartService->add($product, $qty, $seller)) {
             $this->flashService->flash(__('add_to_cart_service.on_success_msg'));
