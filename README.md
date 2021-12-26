@@ -93,7 +93,7 @@ sail artisan db:seed \\Database\\Seeders\\DemoDataSeeders\\DemoDataSeeder
 
 <hr style="border:1px solid gray"> </hr>
 
-<details><summary>Вторая задача - создание структуры URL, впоследствии она также была изменена:</summary>
+<details><summary>Вторая задача - создание структуры URL, впоследствии структура была также изменена:</summary>
 
 | Раздел | Страница | Описание | HTTP метод | Route name| URL | Комментарий |
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
@@ -141,7 +141,7 @@ sail artisan db:seed \\Database\\Seeders\\DemoDataSeeders\\DemoDataSeeder
 
 <hr style="border:1px solid gray"> </hr>
 
-<details><summary>Третья моя задача - разработка перечня предполагаемых сервисов и репозиториев, впоследствии также была изменена:</summary>
+<details><summary>Третья моя задача - разработка перечня предполагаемых сервисов и репозиториев, в итоговой версии этот перечень изменился:</summary>
 
 |Model|DB table|Services|Repository|
 |------|------|------|------|
