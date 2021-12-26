@@ -68,7 +68,7 @@ sail artisan db:seed \\Database\\Seeders\\DemoDataSeeders\\DemoDataSeeder
 
 </details>
 
-<details><summary>В проекте планируется содать следующие модели:</summary>
+<details><summary>В проекте изначально планировалось создать следующие модели:</summary>
 
 - AdminSettings
 - Banner
