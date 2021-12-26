@@ -62,11 +62,14 @@ sail artisan db:seed \\Database\\Seeders\\DemoDataSeeders\\DemoDataSeeder
 
 <hr style="border:1px solid gray"> </hr>
 
-Первая моя задача  - сделать схему хранения данных, по ходу проекта данная схема изменилась.
+<details><summary>Первая моя задача  - сделать схему хранения данных, по ходу проекта данная схема изменилась:</summary>
 
 ![Alt text](project/shop_schema_ver7.png?raw=true "Модель хранения данных")
 
-В проекте планируется содать следующие модели:
+</details>
+
+<details><summary>В проекте планируется содать следующие модели:</summary>
+
 - AdminSettings
 - Banner
 - Category
@@ -84,30 +87,32 @@ sail artisan db:seed \\Database\\Seeders\\DemoDataSeeders\\DemoDataSeeder
 - ViewedProduct
 - Manufacturer
 
+</details>
+
 ### _3.2 Cтруктура URL_
 
 <hr style="border:1px solid gray"> </hr>
 
-Вторая задача - создание структуры URL, впоследствии она также была изменена
+<details><summary>Вторая задача - создание структуры URL, впоследствии она также была изменена:</summary>
 
 | Раздел | Страница | Описание | HTTP метод | Route name| URL | Комментарий |
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
 | Главная | Главная страница | Главный баннер и категории товаров | GET | / | banners |- |
 | Каталог | Перечень товаров | Каталог, популярные товары, скидки | GET | /products/ | catalog.index |- |
-| Каталог | Детальная страница | Просмотр страницы товара | GET | /products/\<slug> | products.show |- |
-| Каталог | Детальная страница | Форма добавления отзыва | GET | /products/\<slug>/reviews | reviews.create |- |
-| Каталог | Детальная страница | Добавление нового отзыва | POST | /products/\<slug>/reviews | reviews.store |- |
+| Каталог | Детальная страница | Просмотр страницы товара | GET | /products/\{slug} | products.show |- |
+| Каталог | Детальная страница | Форма добавления отзыва | GET | /products/\{slug}/reviews | reviews.create |- |
+| Каталог | Детальная страница | Добавление нового отзыва | POST | /products/\{slug}/reviews | reviews.store |- |
 | Каталог | Детальная страница | Сравнение товаров | GET | /products/comparison | comparison |id сравниваемых товаров добавляются в сессию и выгружаются из неё при сравнении |
-| Страница о продавце | Детальная страница | Просмотр страницы о продавце | GET | /sellers/\<id> | sellers.show |- |
+| Страница о продавце | Детальная страница | Просмотр страницы о продавце | GET | /sellers/\{id} | sellers.show |- |
 | Страница о скидках  | Перечень скидок | Перечень скидок всех товаров | GET | /discounts | discounts.index |- |
-| Страница о скидках  | Детальная страница | Просмотр страницы скидки | GET | /discounts/\<id> | discounts.show |- |
+| Страница о скидках  | Детальная страница | Просмотр страницы скидки | GET | /discounts/\{id} | discounts.show |- |
 | Оформление заказа | Детальная страница | Редактирование корзины | GET | /cart | carts.edit |- |
 | Оформление заказа | Детальная страница | Обновление корзины | PATCH | /cart | carts.update |- |
 | Оформление заказа | Детальная страница | Удаление корзины | DELETE | /cart | carts.destroy |удаление корзины из сессии |
 | Оформление заказа | Пошаговая форма заказа | Заполнение формы | GET | /orders | orders.create |- |
 | Оформление заказа | Пошаговая форма заказа | Нажатие кнопки "Оплатить" | POST | /orders | orders.store |Создание нового заказа, запись корзины в БД в order_items |
-| Оформление заказа | Детальная страница оплаты | Редактирование формы опалаты(счёт, способ) | GET | /orders/\<id>/checkin | payments.create |- |
-| Оформление заказа | Детальная страница оплаты | Нажатие кнопки "Оплатить" | POST | /orders/\<id>/checkin | payments.store |- |
+| Оформление заказа | Детальная страница оплаты | Редактирование формы опалаты(счёт, способ) | GET | /orders/\{id}/checkin | payments.create |- |
+| Оформление заказа | Детальная страница оплаты | Нажатие кнопки "Оплатить" | POST | /orders/\{id}/checkin | payments.store |- |
 | Личный кабинет | Детальная страница | Просмотр кабинета | GET | /account | account.show |- |
 | Личный кабинет | Детальная страница | Редактирование профиля | GET | /account/profile | account.edit |- |
 | Личный кабинет | Детальная страница | Обновление профиля | PATCH | /account/profile | account.update |- |
@@ -126,12 +131,17 @@ sail artisan db:seed \\Database\\Seeders\\DemoDataSeeders\\DemoDataSeeder
 | Административный раздел | Обращения | Просмотр обращений | GET | /admin/feedbacks | admin.feedbacks.index |- |
 | Административный раздел | Форма проведения импорта | Выбор параметорв импорта | GET | /admin/import | admin.import |- |
 | Административный раздел | Форма проведения импорта | Нажатие на кнопку "Запустить импорт" | GET | /admin/start-import | admin/start-import |- |
+</details>
+
+
+
+
 
 ### 3.3 Разработка модели сервисов
 
 <hr style="border:1px solid gray"> </hr>
 
-Третья моя задача - разработка перечня предполагаемых сервисов и репозиториев, впоследствии также была изменена.
+<details><summary>Третья моя задача - разработка перечня предполагаемых сервисов и репозиториев, впоследствии также была изменена:</summary>
 
 |Model|DB table|Services|Repository|
 |------|------|------|------|
@@ -152,7 +162,9 @@ sail artisan db:seed \\Database\\Seeders\\DemoDataSeeders\\DemoDataSeeder
 |ViewedProduct|viewed_products|ViewedProductsService|ViewedProductsRepository|
 |Manufacturer|manufacturers|-|ManufacturerRepository|
 
-### 3.4 Видео-запись защиты моей части диплома
+</details>
+
+### 3.4 Работа по остальным задачам в видео-записи защиты диплома
 
 <hr style="border:1px solid gray"> </hr>
 
